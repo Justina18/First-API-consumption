@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+.icon1{
+  margin-right: 20px;
+}
+.header{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  position: fixed;
+  top:0;
+}
+h1{
+  margin-left: 20px;
+  color: white;
+  font-family:Raleway;
+}
+img{
+  width: 200px;
+  height: 256.16px;
+  margin: 8px;
+  border-radius: 4px;
+}
+.App{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-color: white;
+ 
+}
+.App-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.items{
+  background-color:  gray;
+  border-radius: 8px;
+  color: white;
+  width: 280px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items:hover{
+  background-color: #EDFFD9;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  color: grey ;
+  box-shadow: -1px -1px 29px 7px rgba(0,0,0,0.72);
+  -webkit-box-shadow: -1px -1px 29px 7px rgba(0,0,0,0.72);
+  -moz-box-shadow: -1px -1px 29px 7px rgba(0,0,0,0.72);
+  transition: 1.5s; 
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+p{
+  font-family: Raleway;
+  font-size: small;
+  text-align: center;
+}
+@media all and (max-width:425px) {
+  .icons{
+    display: none;
+  }}
+  @media all and (min-width:425px) {
+  .pain{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+}
