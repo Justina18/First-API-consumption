@@ -5,7 +5,11 @@ import './Cart.css'
 
 function Cart () {
   return (
-    <div>Cart</div>
+    <div className='Cart'>
+      <div className='Cart-wrap'>
+          
+      </div>
+    </div>
   )
 }
 

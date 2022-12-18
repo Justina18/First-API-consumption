@@ -10,7 +10,7 @@
 .Header_Container{
     width:100%;
     height:90px;
-    background: goldenrod;
+    background: gray;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -20,7 +20,14 @@
     height:90%;
     display: flex;
     justify-content: space-between;
-    
+}
+.dark{
+    background-color: gray;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: gray;
 }
 .Head_Content{
     width: 100%;
@@ -28,15 +35,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .NavTab{
     width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
+}
+.shopping{
+   color: white;
 }
 .Burger {
     display: none;
