@@ -1,0 +1,40 @@
+h4{
+    color: white;
+}
+.down{
+   
+    position: absolute;
+    top: 10%;
+    margin-top: 3px;
+    line-height: 30px;
+}
+.Drop{
+    border-radius: 8px;
+    width: 150px;
+    color: grey;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.3px);
+        -webkit-backdrop-filter: blur(3.3px);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+    }
+.drop{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.cat{
+    text-decoration: none;
+    cursor: pointer;
+}
+.drop-elec{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

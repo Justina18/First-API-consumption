@@ -1,27 +1,27 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, createContext} from 'react'
 import './Header.css'
 import Nav from './Nav'
 import { FaTimes, } from 'react-icons/fa'
-import { FiAlignJustify, FiSun } from 'react-icons/fi'
+import { FiAlignJustify} from 'react-icons/fi'
 import {Link} from 'react-router-dom'
+import  {MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md'
+
 
 
 function Header({NavTab}) {
 
     const [toggle, settoggle] = useState(true)
-    const [theme, setTheme] = useState('light')
+    const [taggle, setTaggle] = useState(false);
 
-    const toggleTheme = () => {
-      if (theme === 'light'){
-        setTheme('dark');
-      } else {
-        setTheme('light');
-      }
+    const themes = {
+      dark: "",
+      light: "white-content",
     };
-
-    useEffect(() => {
-      document.body.className = theme;},
-      [theme]);
+    
+   const ThemeContext = createContext({
+        theme: themes.dark,
+      changeTheme: () => {},
+    });
 
     const handletoggle = () => { settoggle(!toggle) }
     const FiAlignJustif = (<FiAlignJustify fontSize={25} color="white" onClick={handletoggle} />)
@@ -36,10 +36,14 @@ function Header({NavTab}) {
             <Link to="/" className='links'>
              <img src='/Logo.png' className='Logo'  />
              <h1  className='shopping'>Alaña</h1>
-             <FiSun fontSize={25} color="white" onClick={toggleTheme}/> 
+              
            </Link>
             </div>
             <Nav />
+            <div>
+            {taggle ? <MdOutlineNightlight onClick={() => { setTaggle(!taggle) }}fontSize= '25px' color='white'/>
+         : <MdOutlineLightMode onClick={ () => { setTaggle(!taggle) } } fontSize= '25px' color='white' />  }
+            </div>
             <div className='Burger'>
                     {toggle ? FiAlignJustif : FaTime}
                 </div>

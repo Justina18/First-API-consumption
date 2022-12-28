@@ -2,7 +2,7 @@ import React from 'react'
 import "./Detail.css"
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
-
+import {useState, useEffect} from 'react'
 function Detail() {
   const {id} = useParams()
   const [item, setItem] = useState([]);
@@ -21,6 +21,7 @@ function Detail() {
       getItem()
   }, [])
 
+   
   return (
     <div className="Detail_Main">
         <div className="Detail_Wrap">

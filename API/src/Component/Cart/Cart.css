@@ -1,0 +1,16 @@
+.Cart-wrap{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 60px;
+}
+.cart-butt{
+    border-radius: 8px;
+    color: white;
+    border-color: white;
+}
+.cart-butt:hover{
+    background-color: orange;
+}
